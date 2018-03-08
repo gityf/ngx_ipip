@@ -11,9 +11,9 @@ converts ip to country and city
         cd /usr/local/openresty/lualib/ipip/datx ; make; make install
     6. Start openresty nginx server.
 ```
-## demo of lua thrift client
+## demo of lua client
 ```lua
-   package.cpath = '/usr/local/openresty/lualib/ipip/datx/?.so;'
+package.cpath = '/usr/local/openresty/lualib/ipip/datx/?.so;'
 local ipip = require 'libluaipip'
 
 ipip.ipip_init('ipip.datx')
